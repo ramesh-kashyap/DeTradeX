@@ -84,7 +84,7 @@
         background-image: url(assets/images/let-you-screen-main-imgs.jpg);
         background-position: top center;
         background-repeat: no-repeat;
-        background-color: #85f;
+        background-color: #15191c;
         height: 300px;
     }
 
@@ -220,7 +220,7 @@
     }
 
     .amigo-box-main {
-        background-color: #e5e4ff;
+        background-color: #f6f6f6;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -348,6 +348,153 @@
         text-align: center;
         line-height: 1;
     }
+    .transaction-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background: white;
+}
+
+.transaction-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.icon-circle {
+  background-color: #f5ff82; /* Light yellow-green */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.transaction-button p {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+}
+.crypto-assets-container {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h3 {
+  margin: 0;
+}
+
+.header a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+.crypto-cards {
+  display: flex;
+  gap: 10%;
+  margin-top: 30px;
+  /* padding:35px */
+}
+
+.crypto-card {
+  background-color: #0d0d0d;
+  color: white;
+  border-radius: 16px;
+  padding: 16px;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.symbol {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.name {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.change {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.change.up {
+  color: #6fff57;
+}
+
+.change.down {
+  color: #ffcc33;
+}
+
+.chart-placeholder {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  height: 50px;
+}
+
+.candle {
+  width: 6px;
+  border-radius: 2px;
+}
+
+.candle.up {
+  background-color: #b6ff6e;
+  height: 100%;
+}
+
+.candle.down {
+  background-color: #ffd66b;
+  height: 70%;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-circle {
+  background-color: #ecff8a;
+  color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 14px;
+}
+
 </style>
 
 
@@ -433,15 +580,55 @@
                                                     alt="plus-robort">
                                             </div>
                                         </div>
-
-                                    </div>
-                                </div>
-                                <br>
-
-                                <div data-v-5ecfac1a="" class="container">
-                                    <br><br><br><br><br><br><br><br>
-                                    <div data-v-5ecfac1a="" role="alert" class="van-notice-bar"
-                                        style="color: rgb(9, 14, 22); background: none;    margin-top: 52px;  "><img
+                                        <div class="transaction-buttons">
+                                            <div class="transaction-button">
+                                                <div class="icon-circle">
+                                                    <svg viewBox="0 0 448 512"
+                                                        style="width: 18px; height: 18px; overflow: visible; opacity: unset; z-index: 1; fill: rgb(21, 25, 27);">
+                                                        <path
+                                                            d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <p>Buy</p>
+                                            </div>
+                                            
+                                            <div class="transaction-button">
+                                                <div class="icon-circle">
+                                                    <svg viewBox="0 0 448 512"
+                                                        style="width: 18px; height: 18px; overflow: visible; opacity: unset; z-index: 1; fill: rgb(21, 25, 27);">
+                                                        <path
+                                                            d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <p>Sell</p>
+                                            </div>
+                                            <div class="transaction-button">
+                                                <div class="icon-circle">
+                                                    <svg viewBox="0 0 448 512"
+                                                        style="width: 18px; height: 18px; overflow: visible; opacity: unset; z-index: 1; fill: rgb(21, 25, 27);">
+                                                        <path
+                                                            d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <p>Send</p>
+                                            </div>
+                                            <div class="transaction-button">
+                                                <div class="icon-circle">
+                                                    <svg viewBox="0 0 448 512"
+                                                        style="width: 18px; height: 18px; overflow: visible; opacity: unset; z-index: 1; fill: rgb(21, 25, 27);">
+                                                        <path
+                                                            d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <p>Receive</p>
+                                            </div>
+                                        </div>
+                                        <div data-v-5ecfac1a="" role="alert" class="van-notice-bar"
+                                        style="color: rgb(9, 14, 22); background: none;"><img
                                             data-v-5ecfac1a="" class="icon-noticebar"
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALQSURBVHgB7VY5jhpBFC2gR3LI3KCdEIBA+ARuModIrBnMCYY5wfScAOYEw2RILGpOAM6cGUtsjqaP0I7Z/D7+BTXthm6wiMyXmlp+Ue/V36qEuMr/LiFxhpTLZX21Wg2ov1gsPlmW5VC/WCw+bjabKro22v5yuYTKso/tFRHng+v4ovh+zmazEeni8fiQ5/RQKPQlEonUEomEHovFfsznc8drv7A4QVzgfwlO/YTGDVS9ubn5XiqVauJfCPiBk3Q6HbPdbt/i5B+ZjM2q6Hq9rpOL3P8J5AIPcDrlB+qQr6ULpIzHY2c6nQ5TqVQfwLdwR5pVRjKZ/DWZTL7Jtb4W8AAf8el8pdVq2bBKVV0PQo/ZbFaXY41+YJoKFjXEnwB6JwBXhyNEfQY+zXoBws/3ACDdK1zRlPPkmlwuFw2Hw/eEgf+/oM2QbmsBgJte4C7ZgsuU8xKA0yEMfC+FQuFNPSkOYop9gBrQRXcEhOJbkBm6P8xbfuBM4FkZ6jjpQALRf7HXTq9p2jYrNHUDLBjBXBlxpnS73RpipqHEjM5AJoM2odtmAgLzM7Un1YEgQoGHg9zJsQSSOrF3g34RAiSw4lDsa4Ch6kDOvjgBBnKCrLsIAaodSvF5V6Qwr3PXuQiBfD5vyJuS5VklJjjdKeCp1Vzs0sjfgce+NtLwwS8NUdDq2Fi9dGy1IOF6rgJDDvsqAYeZ0Wd4bY6cTiOnj9YCfguopHcpzSW9opCxqJUueBD7qD0kabWwHCBA5rao9vNDxZY6zn+dh02p830RHbiMXmHKOm981+v1msf24JeSyUNHJecbhFQ8cL+TKW2eSktwPyFrcVyYco6so1omUBZ4kPAD1unUcNmbGpQEjiLVUNdqIqAQCbgjc+xVxKYmwChaVeV4gZOcVAf8LOF1rdNtSj73AicJbAGVhGIJuoKHCtgT4qPC9f4rUq3hVzuucpXfGoDSpf1pRwUAAAAASUVORK5CYII=">
                                         <div role="marquee" class="van-notice-bar__wrap">
@@ -457,69 +644,91 @@
                                         </div><img data-v-5ecfac1a="" class="icon-noticebar"
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJuSURBVHgB7VbNjdpAFH5vTBQuFJAtgC2A3EMBSQGkAPYeDkgBG2MvkZDi3EMB8T2iABcQCggFsAXAHhbsmby3xsGeGbKrjVAiLZ+EPGPezzfjN988gDOeO1B/MZlMXmUZ+ACqRX+vEOUX13UT3W48vu7Qo3sfBCH2vOFMtwmCoKVUrUcxmkqppFYT0WAwuCnbCN0pTaGXJ2eoCwo/mk6njWry8TtKSoGhwT8mEoaf3uoLUUp85uQ5SWxnmfL1fAYBRNUuz5WCxnabvdHcWrqflNnr8ny3k5d7cmW0HiRACZf6uyzbLqskcWUEEmJdnas1GLD4GSYoIyJRdp75vl8hsNm8iKvBcCUEfCvbeJ63YN9izjG5nox8YAF/P95CWvtKT14GF1kpmRXk36Qdu6zX60m/31/DGf8bEE4I1o+7u12HROhCCOeH636cw2MIBMF1l6q2Q0frho5TT1cvBguPlJLECKm6cWYLHgST77mY5aCTEg2Hw7hsI0yn+8rusogoJZtSwnuwgFbVzYWGE8iePc4hee6TS/cfCTwWRKBxGOOTj5dBgM80bel+m3ChC8xvR6EiFqBcYNC4iDabl0td+cg21u1OWoQsaPwJqVYax4rwjH+Ok9YAgy8jx3FIiMRPm548mUBRYDzmk2ILzoIGh7ZtnWXplX671mzBwzBsS4kjOjjz0ciNbDZpilHRblEPyc+ravJc0Io5d1aINZ+GFWGzChGtrJ33e9iBIyiS72G0Wqz/pg809XdWAtS9fqUAc0Thw1ECGNvGBW5v64nWWbFiJkYc+As81BH5ftim4vuw764XjgO+rVbOeN74BVKkDeJfJwQgAAAAAElFTkSuQmCC">
                                     </div>
-                                    {{-- <div data-v-9caaf3b1="" data-v-5ecfac1a="" class="navs hasBanner">
-                                        <div data-v-9caaf3b1="" class="item">
-                                            <div data-v-9caaf3b1="" class="icon">
-                                                <div data-v-5f911827="" data-v-9caaf3b1="" class="com-image img">
-                                                    <div data-v-5f911827="" class="van-image image"><img
-                                                            src="{{asset('')}}assets/images/charge1.png"
-                                                            class="van-image__img" style="object-fit: cover;">
-                                                        <!---->
-                                                        <!---->
+                                        <div class="crypto-assets-container">
+                                        <div class="header">
+                                            <h3>My crypto assets</h3>
+                                            <a href="#">View all</a>
+                                        </div>
+                                        <div class="crypto-cards">
+                                            <!-- BTC Card -->
+                                            <div class="crypto-card">
+                                                <div class="top-row">
+                                                    <div>
+                                                        <!-- <div class="symbol">BTC</div> -->
+                                                        <div class="name">Share DCX Quantitave Bonus</div>
                                                     </div>
+                                                    <!-- <div class="change up">+2.83%</div> -->
+                                                </div>
+                                                <!-- <div class="chart-placeholder">
+                                                    <div class="candle up"></div>
+                                                    <div class="candle down"></div>
+                                                    <div class="candle up"></div>
+                                                    <div class="candle down"></div>
+                                                    <div class="candle up"></div>
+                                                    <div class="candle down"></div>
+                                                </div> -->
+                                                <div class="bottom-row">
+                                                    <div class="icon-circle">
+                                                        <svg viewBox="0 0 640 512" style="width: 14px; height: 14px; overflow: visible; opacity: unset; z-index: 1; fill: rgb(21, 25, 27);"><path d="M610.5 373.3c2.6-14.1 2.6-28.5 0-42.6l25.8-14.9c3-1.7 4.3-5.2 3.3-8.5-6.7-21.6-18.2-41.2-33.2-57.4-2.3-2.5-6-3.1-9-1.4l-25.8 14.9c-10.9-9.3-23.4-16.5-36.9-21.3v-29.8c0-3.4-2.4-6.4-5.7-7.1-22.3-5-45-4.8-66.2 0-3.3.7-5.7 3.7-5.7 7.1v29.8c-13.5 4.8-26 12-36.9 21.3l-25.8-14.9c-2.9-1.7-6.7-1.1-9 1.4-15 16.2-26.5 35.8-33.2 57.4-1 3.3.4 6.8 3.3 8.5l25.8 14.9c-2.6 14.1-2.6 28.5 0 42.6l-25.8 14.9c-3 1.7-4.3 5.2-3.3 8.5 6.7 21.6 18.2 41.1 33.2 57.4 2.3 2.5 6 3.1 9 1.4l25.8-14.9c10.9 9.3 23.4 16.5 36.9 21.3v29.8c0 3.4 2.4 6.4 5.7 7.1 22.3 5 45 4.8 66.2 0 3.3-.7 5.7-3.7 5.7-7.1v-29.8c13.5-4.8 26-12 36.9-21.3l25.8 14.9c2.9 1.7 6.7 1.1 9-1.4 15-16.2 26.5-35.8 33.2-57.4 1-3.3-.4-6.8-3.3-8.5l-25.8-14.9zM496 400.5c-26.8 0-48.5-21.8-48.5-48.5s21.8-48.5 48.5-48.5 48.5 21.8 48.5 48.5-21.7 48.5-48.5 48.5zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm201.2 226.5c-2.3-1.2-4.6-2.6-6.8-3.9l-7.9 4.6c-6 3.4-12.8 5.3-19.6 5.3-10.9 0-21.4-4.6-28.9-12.6-18.3-19.8-32.3-43.9-40.2-69.6-5.5-17.7 1.9-36.4 17.9-45.7l7.9-4.6c-.1-2.6-.1-5.2 0-7.8l-7.9-4.6c-16-9.2-23.4-28-17.9-45.7.9-2.9 2.2-5.8 3.2-8.7-3.8-.3-7.5-1.2-11.4-1.2h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c10.1 0 19.5-3.2 27.2-8.5-1.2-3.8-2-7.7-2-11.8v-9.2z"></path></svg>
+                                                    </div>
+                                                    <div class="price">Invite Friends</div>
                                                 </div>
                                             </div>
-                                            <a href="{{ route('user.invest') }}">
-                                            <div data-v-9caaf3b1="" class="name">Charge</div></a>
-                                        </div>
-                                      
-                                      
-                                        <div data-v-9caaf3b1="" class="item">
-                                            <div data-v-9caaf3b1="" class="icon">
-                                                <div data-v-5f911827="" data-v-9caaf3b1="" class="com-image img">
-                                                    <div data-v-5f911827="" class="van-image image"><img
-                                                            src="{{asset('')}}assets/images/iconsteam.png"
-                                                            class="van-image__img" style="object-fit: cover;">
-                                                        <!---->
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="{{route('user.level-team')}}">
-                                            <div data-v-9caaf3b1="" class="name">team</div></a>
-                                        </div>
-                                        <div data-v-9caaf3b1="" class="item">
-                                            <div data-v-9caaf3b1="" class="icon">
-                                                <div data-v-5f911827="" data-v-9caaf3b1="" class="com-image img">
-                                                    <div data-v-5f911827="" class="van-image image"><img
-                                                            src="{{asset('')}}assets/images/activity.png"
-                                                            class="van-image__img" style="object-fit: cover;">
-                                                        <!---->
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="{{route('user.activities')}}">
-                                            <div data-v-9caaf3b1="" class="name">Activity</div></a>
-                                        </div>
-                                        <div data-v-9caaf3b1="" class="item">
-                                            <div data-v-9caaf3b1="" class="icon">
-                                                <div data-v-5f911827="" data-v-9caaf3b1="" class="com-image img">
-                                                    <div data-v-5f911827="" class="van-image image"><img
-                                                            src="{{asset('')}}assets/images/telegram.png"
-                                                            class="van-image__img" style="object-fit: cover;">
-                                                        <!---->
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="">
-                                            <div data-v-9caaf3b1="" class="name">Telegram</div></a>
-                                        </div>
-                                       
-                                    </div> --}}
 
-                                    <div data-v-524186f8="" data-v-5ecfac1a="" class="home-router"><img
+                                            <!-- XCN Card -->
+                                            <div class="crypto-card">
+                                                <div class="top-row">
+                                                    <div>
+                                                        <!-- <div class="symbol">XCN</div> -->
+                                                        <div class="name">Complete Task For Reward</div>
+                                                    </div>
+                                                    <!-- <div class="change down">-2.83%</div> -->
+                                                </div>
+                                                <!-- <div class="chart-placeholder">
+                                                    <div class="candle up"></div>
+                                                    <div class="candle down"></div>
+                                                    <div class="candle up"></div>
+                                                    <div class="candle down"></div>
+                                                    <div class="candle down"></div>
+                                                    <div class="candle down"></div>
+                                                </div> -->
+                                                <div class="bottom-row">
+                                                    <div class="icon-circle">
+                                                        <svg viewBox="0 0 512 512" style="width: 18px; height: 18px; overflow: visible; opacity: 1; z-index: 1; fill: rgb(3, 3, 3);"><path d="M0 168v-16c0-13.255 10.745-24 24-24h360V80c0-21.367 25.899-32.042 40.971-16.971l80 80c9.372 9.373 9.372 24.569 0 33.941l-80 80C409.956 271.982 384 261.456 384 240v-48H24c-13.255 0-24-10.745-24-24zm488 152H128v-48c0-21.314-25.862-32.08-40.971-16.971l-80 80c-9.372 9.373-9.372 24.569 0 33.941l80 80C102.057 463.997 128 453.437 128 432v-48h360c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24z"></path></svg>
+                                                    </div>
+                                                    <div class="price">Task Center</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    </div>                                   
+
+                                    </div>
+                                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                <div data-v-5ecfac1a="" class="container">
+                                    <br><br><br><br>    
+                                    <!-- <div data-v-5ecfac1a="" role="alert" class="van-notice-bar"
+                                        style="color: rgb(9, 14, 22); background: none;"><img
+                                            data-v-5ecfac1a="" class="icon-noticebar"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALQSURBVHgB7VY5jhpBFC2gR3LI3KCdEIBA+ARuModIrBnMCYY5wfScAOYEw2RILGpOAM6cGUtsjqaP0I7Z/D7+BTXthm6wiMyXmlp+Ue/V36qEuMr/LiFxhpTLZX21Wg2ov1gsPlmW5VC/WCw+bjabKro22v5yuYTKso/tFRHng+v4ovh+zmazEeni8fiQ5/RQKPQlEonUEomEHovFfsznc8drv7A4QVzgfwlO/YTGDVS9ubn5XiqVauJfCPiBk3Q6HbPdbt/i5B+ZjM2q6Hq9rpOL3P8J5AIPcDrlB+qQr6ULpIzHY2c6nQ5TqVQfwLdwR5pVRjKZ/DWZTL7Jtb4W8AAf8el8pdVq2bBKVV0PQo/ZbFaXY41+YJoKFjXEnwB6JwBXhyNEfQY+zXoBws/3ACDdK1zRlPPkmlwuFw2Hw/eEgf+/oM2QbmsBgJte4C7ZgsuU8xKA0yEMfC+FQuFNPSkOYop9gBrQRXcEhOJbkBm6P8xbfuBM4FkZ6jjpQALRf7HXTq9p2jYrNHUDLBjBXBlxpnS73RpipqHEjM5AJoM2odtmAgLzM7Un1YEgQoGHg9zJsQSSOrF3g34RAiSw4lDsa4Ch6kDOvjgBBnKCrLsIAaodSvF5V6Qwr3PXuQiBfD5vyJuS5VklJjjdKeCp1Vzs0sjfgce+NtLwwS8NUdDq2Fi9dGy1IOF6rgJDDvsqAYeZ0Wd4bY6cTiOnj9YCfguopHcpzSW9opCxqJUueBD7qD0kabWwHCBA5rao9vNDxZY6zn+dh02p830RHbiMXmHKOm981+v1msf24JeSyUNHJecbhFQ8cL+TKW2eSktwPyFrcVyYco6so1omUBZ4kPAD1unUcNmbGpQEjiLVUNdqIqAQCbgjc+xVxKYmwChaVeV4gZOcVAf8LOF1rdNtSj73AicJbAGVhGIJuoKHCtgT4qPC9f4rUq3hVzuucpXfGoDSpf1pRwUAAAAASUVORK5CYII=">
+                                        <div role="marquee" class="van-notice-bar__wrap">
+                                            <div class="van-notice-bar__content">
+                                                <marquee class="html-marquee" onmouseover="this.stop();"
+                                                    onmouseout="this.start();" direction="left" behavior="scroll"
+                                                    scrollamount="12">
+                                                    @lang('We are excited to launch our AI-enhanced trading platform! Join us to explore advanced analytics and real-time insights that transform your trading. Thank you for being part of our journey to excellence!')
+                                                </marquee>
+
+
+                                            </div>
+                                        </div><img data-v-5ecfac1a="" class="icon-noticebar"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJuSURBVHgB7VbNjdpAFH5vTBQuFJAtgC2A3EMBSQGkAPYeDkgBG2MvkZDi3EMB8T2iABcQCggFsAXAHhbsmby3xsGeGbKrjVAiLZ+EPGPezzfjN988gDOeO1B/MZlMXmUZ+ACqRX+vEOUX13UT3W48vu7Qo3sfBCH2vOFMtwmCoKVUrUcxmkqppFYT0WAwuCnbCN0pTaGXJ2eoCwo/mk6njWry8TtKSoGhwT8mEoaf3uoLUUp85uQ5SWxnmfL1fAYBRNUuz5WCxnabvdHcWrqflNnr8ny3k5d7cmW0HiRACZf6uyzbLqskcWUEEmJdnas1GLD4GSYoIyJRdp75vl8hsNm8iKvBcCUEfCvbeJ63YN9izjG5nox8YAF/P95CWvtKT14GF1kpmRXk36Qdu6zX60m/31/DGf8bEE4I1o+7u12HROhCCOeH636cw2MIBMF1l6q2Q0frho5TT1cvBguPlJLECKm6cWYLHgST77mY5aCTEg2Hw7hsI0yn+8rusogoJZtSwnuwgFbVzYWGE8iePc4hee6TS/cfCTwWRKBxGOOTj5dBgM80bel+m3ChC8xvR6EiFqBcYNC4iDabl0td+cg21u1OWoQsaPwJqVYax4rwjH+Ok9YAgy8jx3FIiMRPm548mUBRYDzmk2ILzoIGh7ZtnWXplX671mzBwzBsS4kjOjjz0ciNbDZpilHRblEPyc+ravJc0Io5d1aINZ+GFWGzChGtrJ33e9iBIyiS72G0Wqz/pg809XdWAtS9fqUAc0Thw1ECGNvGBW5v64nWWbFiJkYc+As81BH5ftim4vuw764XjgO+rVbOeN74BVKkDeJfJwQgAAAAAElFTkSuQmCC">
+                                    </div> -->
+                                   
+
+                                    <!-- <div data-v-524186f8="" data-v-5ecfac1a="" class="home-router"><img
                                             data-v-524186f8="" class="home_img"
                                             src="{{ asset('') }}assets/images/icon0.png" alt="">
 
@@ -541,7 +750,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
+                                    </div> -->
 
 
                                     <div data-v-dc73e05e="" data-v-5ecfac1a="" class="home-market">
@@ -567,8 +776,7 @@
                                                         <div data-v-5f911827="" class="van-image image"><img
                                                                 src="https://meta2032.s3.ap-east-1.amazonaws.com/upload/20220308/e795dba042eb43472cfd11297581e607.png"
                                                                 class="van-image__img" style="object-fit: cover;">
-                                                            <!---->
-                                                            <!---->
+                                                            
                                                         </div>
                                                     </div>
                                                     <div data-v-dc73e05e="" class="coin"><span data-v-dc73e05e=""
@@ -587,8 +795,7 @@
                                                         <div data-v-5f911827="" class="van-image image"><img
                                                                 src="https://meta2032.s3.ap-east-1.amazonaws.com/upload/20220224/8bec4afab0e8f479f8479f47aef9e822.png"
                                                                 class="van-image__img" style="object-fit: cover;">
-                                                            <!---->
-                                                            <!---->
+                                                            
                                                         </div>
                                                     </div>
                                                     <div data-v-dc73e05e="" class="coin"><span data-v-dc73e05e=""
@@ -607,8 +814,7 @@
                                                         <div data-v-5f911827="" class="van-image image"><img
                                                                 src="https://meta2032.s3.ap-east-1.amazonaws.com/upload/20220224/ce23a8f522542d64023021ddcad30711.png"
                                                                 class="van-image__img" style="object-fit: cover;">
-                                                            <!---->
-                                                            <!---->
+                                                            
                                                         </div>
                                                     </div>
                                                     <div data-v-dc73e05e="" class="coin"><span data-v-dc73e05e=""
@@ -627,8 +833,7 @@
                                                         <div data-v-5f911827="" class="van-image image"><img
                                                                 src="https://meta2032.s3.ap-east-1.amazonaws.com/upload/20220224/4dfb5e25907eaf15d4d87f253b5d2ba8.png"
                                                                 class="van-image__img" style="object-fit: cover;">
-                                                            <!---->
-                                                            <!---->
+                                                            
                                                         </div>
                                                     </div>
                                                     <div data-v-dc73e05e="" class="coin"><span data-v-dc73e05e=""
@@ -647,8 +852,7 @@
                                                         <div data-v-5f911827="" class="van-image image"><img
                                                                 src="https://meta2032.s3.ap-east-1.amazonaws.com/upload/20220224/147c6a59421991d1da20c9919492d195.png"
                                                                 class="van-image__img" style="object-fit: cover;">
-                                                            <!---->
-                                                            <!---->
+                                                           
                                                         </div>
                                                     </div>
                                                     <div data-v-dc73e05e="" class="coin"><span data-v-dc73e05e=""
@@ -668,12 +872,7 @@
                                     <div data-v-49196a87="" data-v-5ecfac1a="" class="swiper-con">
                                         <div data-v-49196a87=""
                                             class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                                            <!-- <div class="swiper-wrapper"
-                                                style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
-                                            </div> -->
-                                            <!---->
-                                            <!---->
-                                            <!---->
+                                            
                                         </div>
                                     </div>
                                 </div>

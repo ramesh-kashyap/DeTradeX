@@ -114,7 +114,7 @@ class User extends Authenticatable
 
      public function tradingProfit()
     {
-    return $this->hasMany('App\Models\Contract','user_id','id')->where('credit_type',0)->where('c_status','-1');
+    return $this->hasMany('App\Models\Contract','user_id','id')->where('c_status','-1');
     }      
           
     public function reward_bonus()
@@ -177,7 +177,7 @@ class User extends Authenticatable
 
     public function withdraw()
     {
-        return  Withdraw::where('user_id',Auth::user()->id)->where('status','!=','Failed')->where('credit_type',0)->sum('amount');
+        return  Withdraw::where('user_id',Auth::user()->id)->where('status','!=','Failed')->sum('amount');
     } 
     
     

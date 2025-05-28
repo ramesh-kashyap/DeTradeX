@@ -428,7 +428,7 @@
     display: flex;
     margin-bottom: .02rem;
     border-radius: .44rem;
-    border: .02rem solid #854af6;
+    border: .02rem solid #15191c;
     background: #fff;
     padding: .04rem
 }
@@ -461,7 +461,7 @@
 .home-market .tabs .tab.first[data-v-dc73e05e] {
     border-radius: .44rem;
     border: .02rem solid #7A7A78;
-    background: #854af6;
+    background: #e8fc9c;
     /* height: 100%; */
     /* background: linear-gradient(to bottom, #F4CF0B 10%, #FDA104 90%); */
     position: relative
@@ -473,7 +473,7 @@
   }
   
 .home-market .tabs .tab.first span[data-v-dc73e05e] {
-    color: #fff;
+    color: #15191c;
     text-align: center;
     font-family: PingFang SC;
     font-size: .28rem;
