@@ -1,0 +1,50 @@
+[26-Apr-2025 10:56:22 Asia/Kolkata] PHP Fatal error:  Uncaught ErrorException: include(/home/dcxprowo/public_html/vendor/symfony/http-foundation/Response.php): Failed to open stream: Permission denied in /home/dcxprowo/public_html/vendor/composer/ClassLoader.php:576
+Stack trace:
+#0 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/dcxprowo/public_html/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#2 /home/dcxprowo/public_html/vendor/composer/ClassLoader.php(576): include('/home/dcxprowo/...')
+#3 /home/dcxprowo/public_html/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#4 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(566): Composer\Autoload\ClassLoader->loadClass()
+#5 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(546): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#6 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(460): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#7 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(377): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#8 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(229): Illuminate\Foundation\Exceptions\Handler->render()
+#9 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(206): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#10 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#11 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#12 {main}
+  thrown in /home/dcxprowo/public_html/vendor/composer/ClassLoader.php on line 576
+[26-Apr-2025 10:56:23 Asia/Kolkata] PHP Fatal error:  Uncaught ErrorException: include(/home/dcxprowo/public_html/vendor/symfony/http-foundation/Response.php): Failed to open stream: Permission denied in /home/dcxprowo/public_html/vendor/composer/ClassLoader.php:576
+Stack trace:
+#0 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/dcxprowo/public_html/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#2 /home/dcxprowo/public_html/vendor/composer/ClassLoader.php(576): include('/home/dcxprowo/...')
+#3 /home/dcxprowo/public_html/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#4 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(566): Composer\Autoload\ClassLoader->loadClass()
+#5 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(546): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#6 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(460): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#7 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(377): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#8 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(229): Illuminate\Foundation\Exceptions\Handler->render()
+#9 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(206): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#10 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#11 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#12 {main}
+  thrown in /home/dcxprowo/public_html/vendor/composer/ClassLoader.php on line 576
+[26-Apr-2025 05:26:46 UTC] PHP Warning:  include(/home/dcxprowo/public_html/vendor/composer/../symfony/mailer/Exception/TransportException.php): Failed to open stream: Permission denied in /home/dcxprowo/public_html/vendor/composer/ClassLoader.php on line 576
+[26-Apr-2025 05:26:46 UTC] PHP Warning:  include(/home/dcxprowo/public_html/vendor/composer/../symfony/mailer/Exception/TransportException.php): Failed to open stream: Permission denied in /home/dcxprowo/public_html/vendor/composer/ClassLoader.php on line 576
+[26-Apr-2025 05:26:46 UTC] PHP Warning:  include(): Failed opening '/home/dcxprowo/public_html/vendor/composer/../symfony/mailer/Exception/TransportException.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dcxprowo/public_html/vendor/composer/ClassLoader.php on line 576
+[26-Apr-2025 05:26:46 UTC] PHP Fatal error:  Uncaught ErrorException: include(/home/dcxprowo/public_html/vendor/composer/../laravel/framework/src/Illuminate/Http/JsonResponse.php): Failed to open stream: Permission denied in /home/dcxprowo/public_html/vendor/composer/ClassLoader.php:576
+Stack trace:
+#0 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/dcxprowo/public_html/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#2 /home/dcxprowo/public_html/vendor/composer/ClassLoader.php(576): include('/home/dcxprowo/...')
+#3 /home/dcxprowo/public_html/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#4 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(699): Composer\Autoload\ClassLoader->loadClass()
+#5 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(459): Illuminate\Foundation\Exceptions\Handler->prepareJsonResponse()
+#6 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(377): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#7 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(229): Illuminate\Foundation\Exceptions\Handler->render()
+#8 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(206): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#9 /home/dcxprowo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#10 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#11 {main}
+  thrown in /home/dcxprowo/public_html/vendor/composer/ClassLoader.php on line 576
